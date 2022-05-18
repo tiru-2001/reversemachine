@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245, 112, 63);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(35, 228, 45);
+    border-radius: 25px;
+}
+
+.sub-container {
+    padding: 20px;
+}
+
+#inp-t {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sted {
+    padding: 10px;
+}
+
+span {
+    padding-top: 50px;
+}
+
+#btn {
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+#aray_button {
+    background-color: black;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.std {
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#resultb {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-weight: bold;
+    color: blue;
+}
+
+#nbtn {
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#ndiv {
+    margin-top: 20px;
+}

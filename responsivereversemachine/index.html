@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="tirumalesha E">
+    <meta name="description" content="This is reverse machine which reverse all things which user input">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Reverse-Machine</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: rgb(21, 12, 58);  display: inline; border-radius: 5px;">
+            <u>Reverse machine</u>
+        </h2>
+
+        <div id="ndiv">
+            <button onclick="nu()" id="nbtn">Enter how many elements</button>
+        </div>
+        <div class="sub-container">
+            <h3>Enter array elements</h3>
+            <br>
+            <button onclick="re()" id="aray_button">click here to enter an array</button>
+            <div class="sted"><br>
+                <h3>Enter starting and ending position <br> from where you want to reverse</h3><br>
+                <button id="strt" onclick="str()" class="std">StartPosition</button>
+                <button id="end" onclick="en()" class="std">EndPosition</button>
+            </div>
+            <button onclick="reverso()" id="btn"> Reverse</button>
+            <div class="result">
+                <h3>Result</h3>
+                <input type="text" disabled id="resultb">
+            </div>
+        </div>
+    </div>
+    <script>
+        let array = [];
+        let s;
+        let e;
+        let num;
+
+        function reverse(arr, start, end) {
+            let temp;
+            while (start < end) {
+
+                temp = arr[start];
+                arr[start] = arr[end - 1];
+                arr[end - 1] = temp;
+                start++;
+                end--;
+            }
+            return arr;
+        }
+
+        function nu() {
+            num = prompt("enter how many elements")
+        }
+
+        function re() {
+
+            for (let i = 0; i < num; i++) {
+                array[i] = prompt("Enter array elements")
+            }
+
+        }
+
+        function str() {
+            s = prompt("Enter starting position")
+        }
+
+
+
+        function en() {
+            e = prompt("Enter ending position")
+        }
+
+        function reverso() {
+            document.getElementById("resultb").value = reverse(array, s, e);
+        }
+    </script>
+
+</body>
+
+</html>
